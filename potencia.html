@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculador de potências</title>
+        
+    </head>
+    <body>
+        <script>
+             function calcula(form){
+                 if(confirm("Tem Certeza?")){
+                     form.result.value = Math.pow(form.pote.value,form.pote.value)+" " + " "+Math.pow(form.pote1.value,form.pote1.value)+ " "+Math.pow(form.pote2.value,form.pote2.value)+ " "+Math.pow(form.pote3.value,form.pote3.value)+ " "+Math.pow(form.pote4.value,form.pote4.value);
+                 }else{
+                     alert("Tente Novamente")
+                 }
+             }
+        </script>
+        <h1>Calculador de potências</h1>
+        <form>
+            Forneça os numeros que deseja ver o quadrado:
+            <p>Primeiro Número</p>
+            <input type="text" name="pote" size="15"/>
+            <p>Segundo Número</p>
+            <input type="text" name="pote1" size="15"/>
+            <p>Terceito Número</p>
+            <input type="text" name="pote2" size="15"/>
+            <p>Quarto Número</p>
+            <input type="text" name="pote3" size="15"/>
+            <p>Quinto Número</p>
+            <input type="text" name="pote4" size="15"/>
+            <p></p>
+            <input type="button" value="Calcular" onclick="calcula(this.form)"/>
+            <input type="reset" value="Limpar">
+            <p>
+            Resultado:
+            <input type="text" name="result" size="15" >
+        </form>
+    </body>
+</html>

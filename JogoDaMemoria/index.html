@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jogo da Memória</title>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+        <script type="text/javascript" src="js/jscr.js"></script>
+    </head>
+    <body onload="zeraTudo()">
+       <div class="tela">
+            <div id="jogo">
+                <div class="linha">
+                   <!-- Dois eventos para realizar os testes
+                        onmousedown ao apertar o botão do mouse que carregará as imagens
+                        onmouseup   ao soltar  o botão do mouse para realiza os testes 
+                        Eventos diferente pois os dois juntos não executam -->
+                    <div class="casa" id="casa00" onmousedown=carregaimagem("00") onmouseup=verifica("00")>
+                        <img src="image/img0.png" id="img00"/>
+                    </div>
+                    <div class="casa" id="casa01" onmousedown=carregaimagem("01") onmouseup=verifica("01")>
+                        <img src="image/img0.png" id="img01"/>
+                    </div>
+                    <div class="casa" id="casa02"  onmousedown=carregaimagem("02") onmouseup=verifica("02")>
+                        <img src="image/img0.png" id="img02"/>
+                    </div>
+                    <div class="casa" id="casa03"  onmousedown=carregaimagem("03") onmouseup=verifica("03")>
+                        <img src="image/img0.png" id="img03"/>
+                    </div>                
+                </div>
+                <div class="linha">
+                    <div class="casa" id="casa10"  onmousedown=carregaimagem("10") onmouseup=verifica("10")>
+                        <img src="image/img0.png" id="img10"/>
+                    </div>
+                    <div class="casa" id="casa11"  onmousedown=carregaimagem("11") onmouseup=verifica("11")>
+                        <img src="image/img0.png" id="img11"/>
+                    </div>
+                    <div class="casa" id="casa12"  onmousedown=carregaimagem("12") onmouseup=verifica("12")>
+                        <img src="image/img0.png" id="img12"/>
+                    </div>
+                    <div class="casa" id="casa13"  onmousedown=carregaimagem("13") onmouseup=verifica("13")>
+                        <img src="image/img0.png" id="img13"/>
+                    </div>                
+                </div>
+                <div class="linha">
+                    <div class="casa" id="casa20"  onmousedown=carregaimagem("20") onmouseup=verifica("20")>
+                        <img src="image/img0.png" id="img20"/>
+                    </div>
+                    <div class="casa" id="casa21"  onmousedown=carregaimagem("21") onmouseup=verifica("21")>
+                        <img src="image/img0.png" id="img21"/>
+                    </div>
+                    <div class="casa" id="casa22"  onmousedown=carregaimagem("22") onmouseup=verifica("22")>
+                        <img src="image/img0.png" id="img22"/>
+                    </div>
+                    <div class="casa" id="casa23"  onmousedown=carregaimagem("23") onmouseup=verifica("23")>
+                        <img src="image/img0.png" id="img23"/>
+                    </div>                
+                </div>
+                <div class="linha">
+                    <div class="casa" id="casa30"  onmousedown=carregaimagem("30") onmouseup=verifica("30")>
+                        <img src="image/img0.png" id="img30"/>
+                    </div>
+                    <div class="casa" id="casa31"  onmousedown=carregaimagem("31") onmouseup=verifica("31")>
+                        <img src="image/img0.png" id="img31"/>
+                    </div>
+                    <div class="casa" id="casa32"  onmousedown=carregaimagem("32") onmouseup=verifica("32")>
+                        <img src="image/img0.png" id="img32"/>
+                    </div>
+                    <div class="casa" id="casa33"  onmousedown=carregaimagem("33") onmouseup=verifica("33")>
+                        <img src="image/img0.png" id="img33"/>
+                    </div>                
+                </div>            
+            </div>
+            <div id="premio">
+                <form>
+                    <input type="button" value=" RECOMEÇA " onclick="zeraTudo()"/>
+                </form>
+                <p id="cliques"><b>Cliques: 0</b></p>
+                <br>
+                <h2>Menos de 30 cliques = 1 Bombom</h2>
+                <h2>Menos de 40 cliques = 1 Pirulito</h2>
+                <h2>40 cliques ou mais = 1 Bala</h2>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" type="text/css" href="CSS/estilo.css"/>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="JS/jscript.js"></script>
+    <title>Jogo da Velha</title>
+</head>
+<body onload="recomeca()">
+    <center>
+    <div id="jogo">
+       <!--primeira linha do tabuleiro com 3 casas -->
+        <div class="linha">
+            <div class="casa" id="casa0" onclick="verifica(0)">
+                <img src="" id="imag0"/>
+            </div>
+            
+            <div class="casa" id="casa1" onclick="verifica(1)">
+                <img src="" id="imag1"/>
+            </div>
+            
+            <div class="casa" id="casa2" onclick="verifica(2)">
+                <img src="" id="imag2"/>
+            </div>
+        </div>
+        <!--segunda linha do tabuleiro com 3 casas -->
+        <div class="linha">
+            <div class="casa" id="casa3" onclick="verifica(3)">
+                <img src="" id="imag3"/>
+            </div>
+            
+            <div class="casa" id="casa4" onclick="verifica(4)">
+                <img src="" id="imag4"/>
+            </div>
+            
+            <div class="casa" id="casa5" onclick="verifica(5)">
+                <img src="" id="imag5"/>
+            </div>
+        </div>
+        <!--terceira linha do tabuleiro com 3 casas -->
+        <div class="linha">
+            <div class="casa" id="casa6" onclick="verifica(6)">
+                <img src="" id="imag6"/>
+            </div>
+            
+            <div class="casa" id="casa7" onclick="verifica(7)">
+                <img src="" id="imag7"/>
+            </div>
+            
+            <div class="casa" id="casa8" onclick="verifica(8)">
+                <img src="" id="imag8"/>
+            </div>
+        </div>
+    </div>
+        </center>
+    <div class="resultado">
+        <p id="resposta">RESULTADO:</p><br/>
+        <p id="xis" class="xis">PONTOS X: 0</p>
+        <p id="bola" class="bola">PONTOS O: 0</p>
+        <p id="velha" class="velha">VELHA...: 0</p>
+        <form>
+            <input type="button" id="btnNovo" value="NOVO JOGO" onclick="recomeca()"/>
+        </form>
+    </div>
+        
+</body>
+</html>

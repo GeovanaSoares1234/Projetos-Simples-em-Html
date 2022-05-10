@@ -1,0 +1,79 @@
+body{
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.25em; /* 20px÷16px = 1.25 */
+}
+table{
+    border: 1px solid #CCC;
+/*    Borda em linha. Poderia ser Separate que são             linhas duplas*/
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%; /*1000px;*/
+    table-layout: fixed;        
+}
+
+table caption{
+    font-size: 1.5em; /*24px ÷ 16px = 1.5*/
+    margin: .5em 0 .75em; /*8px÷16px=0.5 e 12px÷16px=0.75*/
+}
+
+table tr{
+    background-color: #F8F8F8;
+    border: 1px solid #DDD;
+    padding: .3125em; /*5px ÷ 16px = 0.3125*/
+}
+table th,
+table td{
+    padding: .625em; /*10px ÷ 16px = .625*/
+    text-align: center;
+}
+table th{
+    font-size: .85em; /*13.6px ÷ 16px = .85*/
+    letter-spacing: .25em; /*1.6px ÷ 16px = .25*/
+    text-transform: uppercase;
+}
+
+/*Inicia o uso da media Querie quando o
+  dispositivo tiver largura máxima de 600px*/
+@media screen and (max-width: 600px){
+    table{
+        border: 0;
+    }
+    table capition{
+        font-size:  1.3em;
+    }
+    /*Sumir com o cabeçalho*/
+    table thead{
+        border: none;
+        clip: rect(0,0,0,0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    table tr{
+        border-bottom: 3px solid #DDD;
+        display: block;
+        margin-bottom: .625em;
+    }
+    table td{
+        border-bottom: 1px solid #DDD;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+    /*Insere um texto antes do elemento*/
+    table td::before{
+        content: attr(titulo);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    /*Some com a última linha*/
+    table td:last-child{
+        border-bottom: 0;
+    }    
+}
+

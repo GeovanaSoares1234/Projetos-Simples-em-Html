@@ -1,0 +1,67 @@
+h2{
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.tela{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /*define a direção dos itens flexiveis dentro do elemento div*/
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../image/fundo.jpg");
+    background-size: cover;
+    /*vw e vh representam a largura e altura da janela de visualizaçao. A largura da visualização tem uma meida especifica.*/
+    
+}
+
+#jogo{
+    width: 608px;
+    height: 608px;
+    border: solid 3px #FFFFFF;
+    display: inline-block;
+    float: left;
+    /*position: absolute;
+    z-index: 1;*/
+}
+.linha{
+    height: 150px;
+    float: left;    
+}
+.casa{
+    width: 150px;
+    height: 150px;
+    border-bottom: solid 2px #FFFFFF;
+    border-right: solid 2px #FFFFFF;    
+}
+#premio{
+    display: inline-block;
+    float: left;
+    margin-left: 30px;
+    font-family: "Jokerman",monospace,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+input[type=button]{
+    background-color: aliceblue;
+    background-image: linear-gradient(to bottom,#dd53a2,#FFFFFF,#58f8f8);
+    border-radius: 60px;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    border: solid black 1px;
+    /*horizontal, vertical, blur, radius, cor*/
+    box-shadow: 2px 2px 10px 0px #000000;
+    text-shadow: 1px 1px 10px #000000;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+input[type=button]:hover{
+    background-color: #000000;
+    background-image: linear-gradient(to bottom,#58f8f8,#FFFFFF,#dd53a2);
+    text-decoration: none;
+}

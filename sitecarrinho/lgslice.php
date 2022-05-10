@@ -1,0 +1,367 @@
+<?php session_start(); ?>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 2019</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<style>
+    img{
+       margin-left: 1px;
+        margin-top: 5px;
+    }
+   
+    h4{
+        color: black;
+        border: black solid;
+    }
+    h3{
+        font-family: calibri;
+        color: white;
+        background-color: black;
+        border-radius: 20px 20px;
+        padding: 10px;
+        width: 80%;
+        text-align: center;
+        margin-left: 40px;
+    }
+    button{
+        width: 50%;
+        padding: 8px;
+        border-radius: 10px 10px;
+        font-family: calibri;
+        font-size: 18px;
+        color: aliceblue;
+        background-color: black;
+        
+    }
+    #produtos
+    {
+        border-radius: 50px;
+        height: 100%;
+        margin-left: 6%;
+        margin-right: 5%;
+    }
+
+    .produto
+    {
+        width: 465px;
+        height: 450px;
+        margin-top: 25px;
+        border: 2px solid black;
+        border-radius: 10px;
+        float: left;
+        margin: 15px;
+        margin-left: 65px;
+        margin-right: 30px;
+        text-align: center;
+        background-color: #ffffff;
+        padding: 20px;
+         -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+        }
+        .produto:hover img {
+            -webkit-transform: scale(1.0);
+            transform: scale(1.1);
+        }
+    </style>
+    
+
+<body>
+    <div id="all">
+		<ul class="menu">
+	
+			<li><a href="home.php">HOME PAGE<img src="image/icones/casa.png" width="80px" height="80px"></a></li>
+			<li><a href="celulares.php">CELULARES<img src="image/icones/cel.png" width="80px" height="75px"></a>
+			</li>
+			<li><a href="conserto.php">CONSERTOS<img src="image/icones/consertos.png" width="70px" height="75px"></a>
+			</li>
+			
+			
+				<li>
+				<?php if(isset($_SESSION["email"])){ ?>
+					<a href="adm.php">MINHA CONTA<img src="image/icones/minha.png" width="70px" height="79px"></a>
+				<?php } else { ?>
+					<a href="cadastro.php">CADASTRO/LOGIN<img src="image/icones/cadastro.png" width="80px" height="75px"></a>
+				<?php } ?>
+			</li>
+				
+			
+		</ul>
+        </div>
+        
+            &nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>
+            &nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>
+        <div id="conteudo">
+            <header>
+                <center><img src="image/lglogo.png"></center>
+                <br>
+                <br>
+                <br>
+                <br>
+            </header>
+            <nav>
+            <ul>
+                <li><a href="iphoslice.php">IPHONE</a></li>
+                <li><a href="xiaslice.php">XIAOMI</a></li>
+                <li><a href="motoslice.php">MOTOROLA</a></li>
+                <li><a href="lgslice.php">LG</a></li>
+                <li><a href="samslice.php">SAMSUNG</a></li> 
+            </ul>
+            </nav>
+        </div>
+            <article>
+            <div id="produtos">
+                <div class="produto">
+                <h3>PRODUTO: Lg G8x </h3>
+                <img src="image/lg/lgUm.jpg" height="223px" width="100px">
+                <p>Capacidade: 128 GB</p>
+                <p id="valor1">5045,00</p>
+                <br>
+                <button onclick="comprar()">Comprar</button><br>
+                <br>&nbsp;<br>
+            </div>
+            
+             <div class="produto">
+                <h3>PRODUTO: Lg G7</h3>
+                <img src="image/lg/lgQuatro.jpg" height="223px" width="100px">
+                <p>Capacidade: 32 GB RAM</p>
+                <p id="valor3">599,00</p>
+                <br>
+                <button onclick="comprar()">Comprar</button><br>
+               <br>&nbsp;<br>
+            </div>
+            
+             <div class="produto">
+                <h3>PRODUTO:Lg G5</h3>
+                <img src="image/lg/lgCinco.jpg" height="223px" width="100px">
+                <p>Capacidade: 32 GB RAM</p>
+                <p id="valor4">449,00</p>
+                <br>
+                <button onclick="comprar()">Comprar</button><br>
+                 <br>&nbsp;<br>
+            </div>
+             
+              <div class="produto">
+                <h3>PRODUTO: lg G4</h3>
+                <img src="image/lg/lgSeis.jpg" height="238px" width="100px">
+                <p>Capacidade: 8 GB </p>
+                <p id="valor4">349,00</p>
+                <br>
+                <button onclick="comprar()">Comprar</button><br>
+                <br>&nbsp;<br>
+                <br>&nbsp;<br>
+            </div>
+            
+            <div class="produto">
+                <h3>PRODUTO: LG G Flex2 H955 </h3>
+                <img src="image/lg/lgSete.jpg" height="238px" width="100px">
+                <p>Capacidade: 16 GB</p>
+                <p id="valor1">415,00</p>
+                <br>
+                <button onclick="comprar()">Comprar</button><br>
+                <br>&nbsp;<br>
+            </div>
+            
+            <div class="produto">
+                <h3>PRODUTO: LG G3 Beat D724 </h3>
+                <img src="image/lg/lgOito.jpg" height="238px" width="100px">
+                <p>Capacidade: 64 GB </p>
+                <p id="valor1">379,00</p>
+                <br>
+                <button onclick="comprar()">Comprar</button><br>
+                <br>&nbsp;<br>
+            </div>
+            
+            <div class="produto">
+                <h3>PRODUTO: Lg K12</h3>
+                <img src="image/lg/lgDez.jpg" height="238px" width="100px">
+                <p>Capacidade: 32 GB</p>
+                <p id="valor1">799,00</p>
+                <br>
+                <button onclick="comprar()">Comprar</button><br>
+                <br>&nbsp;<br>
+            </div>
+            
+           <div class="produto">
+                <h3>PRODUTO: Lg +11</h3>
+                <img src="image/lg/lgOnze.jpg" height="238px" width="100px">
+                <p>Capacidade: 32 GB</p>
+                <p id="valor1">899,00</p>
+                <br>
+                <button onclick="comprar()">Comprar</button><br>
+                <br>&nbsp;<br>
+            </div>
+            
+             <div class="produto">
+                <h3>PRODUTO: lg K9</h3>
+                <img src="image/lg/lgDoze.jpg" height="238px" width="100px">
+                <p>Capacidade: 16 GB</p>
+                <p id="valor1">398,00</p>
+                <br>
+                <button onclick="comprar()">Comprar</button><br>
+                <br>&nbsp;<br>
+            </div>
+            
+             <div class="produto">
+                <h3>PRODUTO: Lg k10 </h3>
+                <img src="image/lg/lgTreze.jpg" height="238px" width="100px">
+                <p>Capacidade: 32 GB</p>
+                <p id="valor1">880,00</p>
+                <br>
+                <button onclick="comprar()">Comprar</button><br>
+                <br>&nbsp;<br>
+            </div>
+            
+             <div class="produto">
+                <h3>PRODUTO: Lg k10 Pro </h3>
+                <img src="image/lg/lgQua.jpg" height="238px" width="100px">
+                <p>Capacidade: 32 GB</p>
+                <p id="valor1">980,00</p>
+                <br>
+                <button onclick="comprar()">Comprar</button><br>
+                <br>&nbsp;<br>
+            </div>
+            
+             <div class="produto">
+                <h3>PRODUTO: lg K4 </h3>
+                <img src="image/lg/lgQuinze.jpg" height="238px" width="100px">
+                <p>Capacidade: 16 GB</p>
+                <p id="valor1">729,00</p>
+                <br>
+                <button onclick="comprar()">Comprar</button><br>
+                <br>&nbsp;<br>
+            </div>
+            
+             <div class="produto">
+                <h3>PRODUTO: lg K8 </h3>
+                <img src="image/lg/lgDeze.jpg" height="238px" width="100px">
+                <p>Capacidade: 16 GB</p>
+                <p id="valor1">569,00</p>
+                <br>
+                <button onclick="comprar()">Comprar</button><br>
+                <br>&nbsp;<br>
+            </div>
+            
+             <div class="produto">
+                <h3>PRODUTO: lg K8 Plus </h3>
+                <img src="image/lg/lgDSEte.jpg" height="238px" width="100px">
+                <p>Capacidade: 64 GB</p>
+                <p id="valor1">660,00</p>
+                <br>
+                <button onclick="comprar()">Comprar</button><br>
+                <br>&nbsp;<br>
+            </div>
+            
+             <div class="produto">
+                <h3>PRODUTO: Lg Q7+</h3>
+                <img src="image/lg/lgDezoito.jpg" height="238px" width="100px">
+                <p>Capacidade: 64 GB</p>
+                <p id="valor1">809,00</p>
+                <br>
+                <button onclick="comprar()">Comprar</button><br>
+                <br>&nbsp;<br>
+            </div>
+            
+             <div class="produto">
+                <h3>PRODUTO: lg QNote+ </h3>
+                <img src="image/lg/lgDezenove.jpg" height="238px" width="100px">
+                <p>Capacidade: 64 GB</p>
+                <p id="valor1">898,00</p>
+                <br>
+                <button onclick="comprar()">Comprar</button><br>
+                <br>&nbsp;<br>
+            </div>
+            
+             <div class="produto">
+                <h3>PRODUTO: lg Q6</h3>
+                <img src="image/lg/lgVinte.jpg" height="238px" width="100px">
+                <p>Capacidade: 32 GB</p>
+                <p id="valor1">988,00</p>
+                <br>
+                <button onclick="comprar()">Comprar</button><br>
+                <br>&nbsp;<br>
+            </div>
+            
+            <div class="produto">
+                <h3>PRODUTO: lg Q6 Plus </h3>
+                <img src="image/lg/lgVinteUm.jpg" height="238px" width="80px">
+                <p>Capacidade: 64 GB</p>
+                <p id="valor1">689,00</p>
+                <br>
+                <button onclick="comprar()">Comprar</button><br>
+                <br>&nbsp;<br>
+            </div>
+            
+            <div class="produto">
+                <h3>PRODUTO: lg K12 Plus</h3>
+                <img src="image/lg/lgVinteDois.jpg" height="238px" width="80px">
+                <p>Capacidade: 128 GB</p>
+                <p id="valor1">929,00</p>
+                <br>
+                <button onclick="comprar()">Comprar</button><br>
+                <br>&nbsp;<br>
+            </div>
+            
+             <div class="produto">
+                <h3>PRODUTO: lg V35 </h3>
+                <img src="image/lg/lgVinteTres.jpg" height="238px" width="80px">
+                <p>Capacidade: 128 GB</p>
+                <p id="valor1">929,00</p>
+                <br>
+                <button onclick="comprar()">Comprar</button><br>
+                <br>&nbsp;<br>
+            </div>
+            
+             <div class="produto">
+                <h3>PRODUTO: LG K40S </h3>
+                <img src="image/lg/lgVinteQuatro.jpg" height="238px" width="80px">
+                <p>Capacidade: 32 GB</p>
+                <p id="valor1">799,00</p>
+                <br>
+                <button onclick="comprar()">Comprar</button><br>
+                <br>&nbsp;<br>
+            </div>
+            
+            <div class="produto">
+                <h3>PRODUTO: LG K50S</h3>
+                <img src="image/lg/lgVinteCinco.jpg" height="238px" width="80px">
+                <p>Capacidade: 32 GB</p>
+                <p id="valor1">999,00</p>
+                <br>
+                <button onclick="comprar()">Comprar</button><br>
+                <br>&nbsp;<br>
+            </div>
+            
+            <div class="produto">
+                <h3>PRODUTO: LG K50S</h3>
+                <img src="image/lg/lgVinteSeis.jpg" height="238px" width="80px">
+                <p>Capacidade: 32 GB</p>
+                <p id="valor1">999,00</p>
+                <br>
+                <button onclick="comprar()">Comprar</button><br>
+                <br>&nbsp;<br>
+            </div>
+        </div>
+    </article>
+
+    <script>
+        function comprar(e){
+            e = e || window.event;
+            e = e.target || e.srcElement;
+            var divE = e.parentElement;
+
+            var produto = divE.childNodes[1].textContent.replace("PRODUTO: ", "");
+            var preco = divE.childNodes[7].textContent;
+            console.log(produto, preco, e.parentNode.childNodes);
+            
+            alert("Item adicionado ao carrinho");
+            window.location.href = "carrinho.php?produto=" + produto + "&preco=" + preco;
+        }
+    </script>
+    </body>
+</html>

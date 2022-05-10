@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exemplo 7 de JavaScript</title>
+    </head>
+    <body>
+        <script>
+             function calcula(form){
+                 if(confirm("Tem Certeza?")){
+                     form.result.value = eval(form.expr.value)
+                     document.getElementById("res").innerHTML="Resultado final: "+eval(form.expr.value)
+                 }else{
+                     alert("Tente Novamente")
+                 }
+             }
+        </script>
+        <h1>Calculadora</h1>
+        <form>
+            Forneça uma expressão matemática:
+            <input type="text" name="expr" size="15"/>
+            <p>
+            <input type="button" value="Calcular" onclick="calcula(this.form)"/>
+            <input type="reset" value="Limpar">
+            <p>
+            Resultado:
+            <input type="text" name="result" size="15" >
+            <p id="res">Resultado final: </p>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+create table usuarios
+(
+    id int(11) NOT NULL AUTO_INCREMENT,
+    nome varchar(50) NOT NULL,
+    cpf bigint(20) NOT NULL,
+    email varchar(60) NOT NULL,
+    senha` varchar(60) NOT NULL
+)

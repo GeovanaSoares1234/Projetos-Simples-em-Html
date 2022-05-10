@@ -1,0 +1,72 @@
+body{
+    background-image: url(sim.gif);
+    background-size: cover;
+    
+    
+}
+#jogo{
+    width: 603px;
+    height: 603px;
+    border: solid 3px #fff;
+    display: inline-block;
+    float: left;
+    background-image: linear-gradient(to right,black,black);
+}
+.linha{
+    height: 200px;
+    border-bottom: solid 1px;
+    color: aliceblue;
+}
+.casa{
+    width: 200px;
+    height: 100%;
+    border-right: solid 1px;
+    float: left;
+}
+.xis{
+    font-family: "Courier New","monospace",sans-serif;
+    color: aliceblue;
+    font-weight: bold;
+}
+.bola{
+    font-family: "Courier New","monospace",sans-serif;
+    color: aliceblue;
+    font-weight: bold;
+}
+.velha{
+    font-family: "Courier New","monospace",sans-serif;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+
+.resultado{
+    margin-left: 50px;
+    float: left;
+  
+}
+#resposta{
+    font-size: 35;
+    font-style: italic;
+    font-weight: bold;
+    color: aliceblue;    
+}
+input[type=button]{
+    background-color: aliceblue;
+    background-image: linear-gradient(to bottom,black,#36c9ff);
+    border-radius: 60px;
+    color: aliceblue;
+    padding: 10px;
+    text-decoration: none;
+    border: solid aliceblue 1px;
+    /*horizontal, vertical, blur, radius, cor*/
+    box-shadow: 2px 2px 10px 0px #000000;
+    text-shadow: 1px 1px 10px #000000;
+    cursor: pointer;
+    
+}
+input[type=button]:hover{
+    background-color: #000000;
+    background-image: linear-gradient(to bottom,#36c9ff,black);
+    text-decoration: none;
+}

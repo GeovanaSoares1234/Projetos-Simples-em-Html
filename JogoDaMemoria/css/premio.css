@@ -1,0 +1,62 @@
+body{
+   
+    background-image: url("../image/fundo1.jpg");
+    background-size: auto;
+
+}
+.data{
+     border: 1px solid #ffffff;
+    margin-bottom: 20px;
+    padding: 10px; 
+    background-color:#000000;
+    width: 15%;
+    height:15%;
+    justify-content: center;
+}
+
+#frase{
+    font-size: 20px;
+    color: #000000;
+    text-align: center;                
+}
+#produto{
+    font-size: 50px;
+    color: #00FF00;
+    text-align: center;
+}
+.imagem{
+    text-align: center;
+    border:1px solid #000000;
+    
+}
+img{
+    width: 200px;
+    height: auto;                
+}
+.nome{
+     border: 1px solid #000000;
+    margin-bottom: 20px;
+    padding: 10px; 
+    background-color:rgba(255, 255, 255, 0.81);
+    width: 45%;
+    justify-content: center;  
+}
+h3{
+    font-size: 18px;
+    margin-top: 0;
+    color: #ffffff;
+    font-family: calibri;
+     
+}
+h2{
+    font-family:simplex;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    background-color:#000000;
+}
+
+h1{
+    color: black;
+     text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px black, 0 0 40px #000000, 0 0 50px black, 0 0 70px black, 0 0 80px black, 0 0 100px black, 0 0 150px black;
+    
+}

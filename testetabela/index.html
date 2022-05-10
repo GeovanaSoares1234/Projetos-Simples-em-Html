@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <script type="text/javascript" src="js/js.js"></script>
+    </head>
+    <body onload="inicia()">
+        <table border="2">
+            <tr>
+                <td><img src="image/blsa9.jpg"></td>
+                <td><p>BOLSA CINZA</p></td>
+                <td style="width: 100px"><p id="valor1">150,00</p></td>
+                <td><button onclick="comprar(1)">Comprar</button></td>
+                <td><form><p>Qtde:</p> <input type="text" id="qtd1" value="0"></form></td>
+                <td><button  id="btn1" onclick = "calcular(1)">Calcular</button></td>
+                <td style="width: 100px"><p id="total1">0.00</p></td>
+            </tr>
+            <tr>
+                <td><img src="image/bolsa1.jpg"></td>
+                <td><p>BOLSA EMOJIS</p></td>
+                <td style="width: 100px"><p id="valor2">200,00</p></td>
+                <td><button onclick="comprar(2)">Comprar</button></td>
+                <td><form><p></p>Qtde: <input type="text" id="qtd2" value="0"></form></td>
+                <td><button  id="btn2" onclick = "calcular(2)">Calcular</button></td>
+                <td style="width: 100px"><p id="total2">0.00</p></td>
+            </tr>
+            <tr>
+                <td><img src="image/bolsa2.jpg"></td>
+                <td><p>BOLSA AZUL</p></td>
+                <td style="width: 100px"><p id="valor3">190,00</p></td>
+                <td><button onclick="comprar(3)">Comprar</button></td>
+                <td><form>Qtde: <input type="text" id="qtd3" value="0"></form></td>
+                <td><button id="btn3" onclick = "calcular(3)">Calcular</button></td>
+                <td style="width: 100px"><p id="total3">0.00</p></td>
+            </tr>
+            <tr>
+                <td colspan="7"><p id="vrtotal">TOTAL R$0.00</p></td>
+            </tr>
+        </table>
+    </body>
+</html>

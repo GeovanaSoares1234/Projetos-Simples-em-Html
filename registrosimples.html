@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exemplo 6 de JavaScript</title>
+    </head>
+    <body>
+        <script>
+             function valida(){
+                 if(regform.nome.value==""){
+                     alert("Você esqueceu de fornecer o seu nome");
+                 }else{
+                     regform.submit();
+                 }
+             }
+        </script>
+        <form name="regform">
+            Nome: <input  name="nome" type="text" size="20" maxlength="40" value="">
+            <br><br>
+            <input type="button" value="registrar" onclick="valida()"/>
+        </form>
+    </body>
+</html>

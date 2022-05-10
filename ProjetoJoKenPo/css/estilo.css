@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    background: #FFFCB3;
+}
+#titulo{
+    text-align: center;
+    margin: 1em auto;
+    font-family: "Berlin Sans FB","Bauhaus 93";
+    font-size: 2.5em;
+    /*Tranforma em maiuscula*/
+    text-transform: uppercase;
+    color: #FFF;
+    /*
+    SOMBRA DO TEXTO:
+        1o valor: deslocamento da sombra: dir(+) esq(-)
+        2o valor: deslocamento da sombra: baixo(+) cima (-)
+        3o valor: raio para efeito do desfoque (blur)
+        4o valor: cor da sombra
+    */
+    text-shadow: 
+        1px -1px #000, -1px 1px #000, 1px 1px #000, -1px -1px #000,
+        0 0 0.3125em #FFF, 0 0 0.6250em #FFF, 0 0 0.9375em #FFF,
+        0 0 1.25em #0600A7, 0 0 2.1875em #0600A7, 0 0 2.5em #0600A7, 0 0 3.125em #0600A7, 0 0 4.6875em #0600A7; 
+}
+#armas{
+    text-align: center;
+}
+#armas img{
+    width: 10%;
+    height: auto;
+    /*top right bottom left*/
+    margin: 0 1em 0 1em;
+}
+#armas img:hover{
+    /*filter define vários efeitos visuais*/
+    filter:drop-shadow(0 0 0.3125em #0600A7);
+    transform: rotate(45deg);
+}
+
+
+#campo{
+    text-align: center;
+    margin: 2em auto;
+    width: 80%; /*ocupará 80% da largura da tela*/
+}
+#voce{
+    /*cria uma caixa do tamanho do elemento e informa que ficará em linha*/
+    display: inline-block;
+    width: 30%;
+    height: auto;
+}
+#voce img{
+    padding: 1em;
+    border: 2px dashed #0600A7;
+    width: 65%;
+    height: auto;
+}
+#robo{
+    /*cria uma caixa do tamanho do elemento e informa que ficará em linha*/
+    display: inline-block;
+    width: 30%;
+    height: auto;
+}
+#robo img{
+    padding: 1em;
+    border: 2px dashed #0600A7;
+    width: 65%;
+    height: auto;
+}
+.placar{
+    text-align: center;
+    font-family: "Berlin Sans FB","Bauhaus 93";
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #000;
+    text-shadow: 0 0 0.3125em #0600A7, 0 0 0.6250em #FFF;
+}
+#botao{
+    text-align: center;
+    margin: 2em auto;
+}
+button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.875em;
+    color: #050505;
+    padding: 0.625em 1.25em;
+    background: linear-gradient(to bottom, #FFF 0%, #EBEBEB 50%, #DBDBDB 50%, #B5B5B5);
+    border-radius: 0.625em;
+    border: 0.0625em solid #949494;
+    box-shadow: 0 0.625em 0.1875em rgba(0,0,0,0.5), inset 0 0 1.25em rgba(255,255,255,1);
+    text-shadow: 0 -0.625em 0.1875em rgba(0,0,0,0.2), inset 0 0 1.25em rgba(255,255,255,1);
+}
+button:hover{
+    background: linear-gradient(to top, #FFF 0%, #EBEBEB 50%, #DBDBDB 50%, #B5B5B5);
+}
+
+/*Quando a largura máxima da tela for 320px*/
+@media screen and (max-width:320px){
+    body{
+        background: #facada;
+        width: 320px;
+    }
+    #mensagem:after{
+        content: "Largura mínima 320px";
+        margin: 0 0 0 2em;
+        font-size: 15px;
+        color: dimgrey;
+    }
+}
+
+
+
+
+
+
+
+
+

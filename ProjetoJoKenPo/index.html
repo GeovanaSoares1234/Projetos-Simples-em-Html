@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Projeto JoKenPô</title>
+        <link rel="stylesheet" href="css/estilo.css">
+        <script type="text/javascript" src="jscript/jokenpo.js"></script>
+    </head>
+    <body onload="limpar()">
+        <div id="titulo">JOKENPÔ</div>
+        <div id="armas">
+            <img src="imagens/pedra.png" id="pedra" onclick="escolhe(0)">
+            <img src="imagens/papel.png" id="papel" onclick="escolhe(1)">
+            <img src="imagens/tesoura.png" id="tesoura" onclick="escolhe(2)">
+        </div>
+        <div id="campo">
+            <div id="voce">
+                <img src="imagens/ppt.png" id="escolhavoce">
+                <div class="placar" id="pvoce">VOCE: 0</div>
+            </div>
+            <div id="robo">
+                <img src="imagens/ppt.png" id="escolharobo">
+                <div class="placar" id="probo">ROBÔ: 0</div>
+            </div>
+        </div>
+        <div class="placar" id="pempate">EMPATE: 0</div>
+        <div id="botao">
+            <button type="button" id="reiniciar" onclick="limpar()">REINICIAR</button>
+        </div>
+        <div id="mensagem"></div>
+    </body>
+</html>

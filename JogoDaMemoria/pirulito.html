@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pirulito</title>
+        <link rel="stylesheet" type="text/css" href="css/premio.css"/>
+    </head>
+    <body>
+       <center> 
+       <div class="nome">
+        <h1>PARABÉNS</h1><br>
+        <h2>Você ganhou um PIRULITO..</h2>
+        <br>
+        <p id="imagem">
+            <img src="image/pirulito.jpg"/>
+        </p>
+       </div>
+        <div class="data">
+        <h3>Menos de 30 cliques = 1 Bombom</h3>
+        <h3>Menos de 40 cliques = 1 Pirulito</h3>
+        <h3>40 cliques ou mais = 1 Bala</h3>
+        </div>
+       
+        </center>
+        <script>
+            //o split separa a string quando encontra o ?
+            var variaveis=location.search.split("?");
+            var quebra = variaveis[1].split("=");
+            document.getElementById("frase").innerHTML="Você venceu com "+quebra[1]+" cliques e ganhou um"
+        </script>        
+    </body>
+</html>
